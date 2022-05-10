@@ -1,0 +1,73 @@
+.ti-login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--td-bg-color-page);
+}
+.ti-login-tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px
+}
+.ti-tab-login {
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--td-font-gray-1);
+    line-height: 28px;
+    padding-bottom: 1px;
+}
+.ti-tab-login:hover {
+    cursor: pointer
+}
+.ti-tab-login.ti-tab-login-active {
+    border-bottom: 2px solid var(--td-brand-color-active)
+}
+.ti-login-content {
+    width: 450px;
+    padding: 60px 50px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.ti-bind-content {
+    width: 650px;
+    padding: 60px 50px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.ti-bind-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--td-font-gray-1);
+    line-height: 28px;
+    margin-bottom: 40px
+}
+.ti-status-content {
+    width: 300px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.ti-status-content p {
+    font-size: 20px;
+}
+.ti-admin-bind-area {
+    color: var(--td-brand-color-active);
+    text-align: end;
+    position: relative;
+    top: 20px;
+}
+
+.ti-admin-bind-area span:hover {
+    cursor: pointer;
+    color: var(--td-brand-color-hover);
+}

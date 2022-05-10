@@ -1,0 +1,39 @@
+
+
+
+
+#ti-main {
+    width: calc(100vw - 232px);
+    height: calc(100vh - 64px);
+    overflow-y: scroll;
+    flex-direction: column;
+}
+#ti-header {
+    border-bottom: 1px solid var(--td-border-level-1-color);
+    display: flex;
+    justify-content: space-between;
+    padding:0 24px;
+}
+#ti-header .ti-reference {
+    display: flex;
+    align-items: center;
+}
+
+.ti-net-title {
+    font-size: 28px;
+    font-weight: 600;
+    height: 64px;
+    line-height: 64px;
+    color: var(--td-font-gray-1);  
+    padding-left: 24px;
+    border-bottom: 1px solid var(--td-border-level-1-color);
+}
+.ti-content-and-footer-wrapper {
+    height: calc(100vh - 64px);
+    overflow-y: scroll;
+    flex-direction: column;
+}
+.ti-flex {
+    flex: 1 1 calc(100vw - 232px);
+    width: calc(100vw - 232px);
+}

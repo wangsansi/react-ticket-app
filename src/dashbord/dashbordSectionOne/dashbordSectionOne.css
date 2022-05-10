@@ -1,0 +1,11 @@
+.ti-dashbord-section-one {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+}
+.ti-dashbord-section-one-block {
+    display: block;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 8px;
+}

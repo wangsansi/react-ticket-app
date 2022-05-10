@@ -1,0 +1,28 @@
+.ti-section-wrapper.ti-related-wrapper {
+    background-color: var(--td-bg-color-container);
+    padding: 30px 32px
+}
+.ti-input-area {
+    display: flex;
+    
+}
+.ti-input-container {
+    flex: 1 1;
+    display: flex;
+}
+.ti-input-operation-container {
+    flex: 0 0 88px
+}
+
+.ti-input-wapper {
+    display: inline-flex;
+    padding: 0 22px 0 0;
+    display: flex;
+    align-items: center;
+}
+.ti-input-title {
+    flex: 0 0 78px;
+}
+.ti-table-area {
+    margin-top: 26px;
+}

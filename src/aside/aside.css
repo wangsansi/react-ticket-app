@@ -1,0 +1,15 @@
+.ti-aside-nav {
+    height: 100vh;
+    overflow-y: scroll;
+    font-size: 14px;
+}
+.t-default-menu .t-menu__logo {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--td-font-gray-1);  
+    padding-left: 24px;
+}
+.t-default-menu.t-is-collapsed .t-menu__logo{
+    justify-content: center;
+    padding-left: 0;
+}

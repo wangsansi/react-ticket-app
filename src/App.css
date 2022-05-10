@@ -1,0 +1,37 @@
+.ti-section-wrapper {
+  padding: 24px 32px;
+  background: var(--td-bg-color-container);
+  border-radius: 3px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ti-section-wrapper .ti-section-header {
+   display: flex;
+   justify-content: space-between;
+   font-size: 20px;
+   line-height: 24px;
+   color: var(--td-text-color-primary);
+}
+.ti-section-wrapper .ti-section-title-area{
+   font-weight: 500;
+   margin: 8px 0;
+   color: var(--td-text-color-primary);
+}
+.ti-section-wrapper .ti-section-title-area .ti-sub-title
+{
+   font-size: 14px;
+   color: var(--td-brand-color);
+   color: var(--td-text-color-placeholder);
+   line-height: 22px;
+   margin-left: 4px;
+}
+.ti-section-content {
+   width: 100%
+}
+a.ti-ticket-link:hover {
+   color:var(--td-brand-color)
+}
+a.ti-ticket-link:active {
+   color:var(--td-brand-color)
+}

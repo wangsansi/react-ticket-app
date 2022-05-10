@@ -1,0 +1,43 @@
+.ti-card-container {
+    width: 100%;
+    height: 168px;
+    padding: 24px 32px;
+    background: var(--td-bg-color-container);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ti-card-container .ti-card-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    line-height: 22px;
+    font-weight: 500;
+    color: var(--td-text-color-primary);
+}
+.ti-card-container .ti-card-number {
+    color: var(--td-text-color-primary);
+    font-size: 36px;
+    margin-bottom: 14px;
+    line-height: 44px;
+}
+.ti-card-container .ti-card-remark {
+    color: var(--td-text-color-placeholder);
+}
+
+.ti-card-container.mian-card-container {
+    background: var(--td-brand-color);
+    color: var(--td-text-color-primary);
+}
+.ti-card-container.mian-card-container .ti-card-title,
+.ti-card-container.mian-card-container .ti-card-number,
+.ti-card-container.mian-card-container .ti-card-remark  {
+    color: var(--td-text-color-anti);
+}
+.ti-card-container.mian-card-container .ti-card-remark {
+    opacity: .6;
+    line-height: 22px;
+} 

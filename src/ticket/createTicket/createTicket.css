@@ -1,0 +1,74 @@
+.ti-section-wrapper.ti-create-wrapper {
+    background-color: var(--td-bg-color-container);
+    padding: 30px 32px
+}
+.ti-form-basic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--td-bg-color-container);
+    padding: 0 32px 134px;
+}
+.ti-form-basic-container .ti-form-basic-item {
+    width: 700px;
+}
+.ti-form-basic-container .ti-form-basic-container-title{
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--td-text-color-primary);
+    margin: 34px 0 32px;
+}
+
+.ti-form-submit-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    background-color: var(--td-bg-color-component);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.ti-form-submit-container .ti-form-submit-sub {
+    padding-left: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.ti-form-submit-sub .reset {
+    margin-left: 8px;
+}
+
+.ti-category-wrapper {
+    display: flex;
+    align-items: center;
+}
+.ti-category-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 88px;
+    height: 28px;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid var(--td-bg-color-component);
+    color: var(--td-text-color-primary);
+    background-color: var(--td-bg-color-component);
+}
+.ti-category-block:hover {
+    border: 1px solid transparent;
+    background-color: var(--td-bg-color-component-hover);
+}
+.ti-category-block.ti-category-block-active {
+    color: var(--td-text-color-anti);
+    border: 1px solid transparent;
+    background-color: var(--td-brand-color-8);
+}

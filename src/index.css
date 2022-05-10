@@ -1,0 +1,102 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+  color: var(--td-text-color-primary);
+  font-family: -apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,Arial Regular;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding: 0
+}
+body,ol,ul,h1,h2,h3,
+h4,h5,h6,p,input,p{
+	margin:0;
+	padding:0;
+  line-height: 1
+} 
+a {
+  text-decoration:none;
+  cursor: pointer;
+  color: var(--td-text-color-primary);
+}
+a:hover {
+  text-decoration:none;
+  color: var(--td-brand-color);
+} 
+a:visited { 
+  color: var(--td-text-color-primary);
+}
+a:active {
+  color: var(--td-brand-color);
+}
+li {
+  list-style:none
+} 
+img {
+  border:0
+} 
+p{
+  word-wrap:break-word
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary
+{
+  display: block;
+}
+/*input {
+    border: none;
+}*/
+input[type="button" i], 
+input[type="submit" i], 
+input[type="reset" i], 
+input[type="file" i]::-webkit-file-upload-button,
+button {
+  padding: 0;
+  border: none;
+}
+button,
+input {
+  font: inherit;
+  margin: 0;
+  color: inherit;
+  padding: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+  background-color: #cccdcc;
+}

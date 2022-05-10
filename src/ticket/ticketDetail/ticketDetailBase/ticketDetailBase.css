@@ -1,0 +1,107 @@
+.ti-info {
+    margin-bottom: 16px;
+}
+.ti-base-info {
+    column-count: 2;
+}
+.ti-info-item {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    color: var(--td-text-color-primary);
+    line-height: 22px;
+}
+.ti-info-item-title {
+    width: 100px;
+    flex: 0 0 100px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--td-text-color-secondary);
+    text-align: left;
+}
+.ti-info-item-content {
+    margin-left: 24px;
+    display: flex;
+}
+.ti-info-item-content .ti-small-img {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.ti-small-img img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+.ti-bottom {
+    margin-bottom: 0;
+}
+.ti-handle-block {
+    padding-bottom: 134px;
+}
+.ti-handle-block .ti-info-item-content{
+    flex: 1
+}
+.ti-handle-block .ti-info-item-title::before{
+    display: inline-block;
+    margin-right: 4px;
+    color: transparent;
+    line-height: 22px;
+    content: "*";
+}
+.ti-handle-block .ti-handle-required::before{
+    color: var(--td-error-color);
+}
+.ti-handle-block .ti-info-item{
+    align-items: flex-start;
+}
+.ti-handle-submit-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    background-color: var(--td-bg-color-component);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.ti-handle-submit-sub {
+    padding-left: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.ti-mask {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--td-font-gray-2); 
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ti-swiper-wrapper {
+    width: 70vw;
+    height: 90vh;
+}
+
+.ti-swiper-item-block {
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ti-swiper-item-block img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+

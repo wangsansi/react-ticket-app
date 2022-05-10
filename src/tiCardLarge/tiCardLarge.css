@@ -1,0 +1,32 @@
+.ti-card-wrapper {
+    padding: 24px 32px;
+    background: var(--td-bg-color-container);
+    border-radius: 3px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .ti-card-wrapper .ti-card-header {
+     display: flex;
+     justify-content: space-between;
+     font-size: 20px;
+     line-height: 24px;
+     color: var(--td-text-color-primary);
+     margin-bottom: 24px;
+  }
+  .ti-card-wrapper .ti-card-title-area{
+     font-weight: 500;
+     margin: 8px 0;
+     color: var(--td-text-color-primary);
+  }
+  .ti-card-wrapper .ti-card-title-area .ti-sub-title
+  {
+     font-size: 14px;
+     color: var(--td-brand-color);
+     color: var(--td-text-color-placeholder);
+     line-height: 22px;
+     margin-left: 4px;
+  }
+  .ti-card-content {
+     width: 100%
+  }
