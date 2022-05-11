@@ -6,6 +6,8 @@
 
 [http://124.221.141.133/](http://124.221.141.133/)
 
+后端项目见：https://github.com/wangsansi/node-ticket-app
+
 ## 开发环境
 
 React+[Tdesign](https://0_28_0-tdesign-react.surge.sh/react/overview)
