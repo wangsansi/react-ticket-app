@@ -2,7 +2,9 @@
 
 这是一个给小区物业使用的工单系统后台，管理后台包括登录、创建用户、退出、权限分配以及创建工单、上传图片附件、派单、转单、查看进度、完成工单等功能。
 
-后端项目见：https://github.com/wangsansi/node-ticket-app
+后端：https://github.com/wangsansi/node-ticket-app
+
+小程序端：https://github.com/wangsansi/frogla2.0
 
 ## demo
 
