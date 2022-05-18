@@ -2,7 +2,7 @@ import { Form, Input, Button } from 'tdesign-react';
 import { DesktopIcon, LockOnIcon, CheckCircleIcon } from 'tdesign-icons-react';
 import { useNavigate } from "react-router-dom";
 import Register from '../user/register'
-import React, { useRef, useState,useImperativeHandle, forwardRef} from 'react';
+import React, { useRef, useState, forwardRef} from 'react';
 import './user.css'
 import api from '../api'
 const { FormItem } = Form;
@@ -33,8 +33,14 @@ export const Status = function () {
 function LoginContent() {
     const [select, setSelect] = useState(0)
     const formRef = useRef();
-    const tabRef = useRef();
     const navigate = useNavigate();
+    const tabList = [{
+        id: 0,
+        item: '登录'
+    },{
+        id: 1,
+        item: '注册'
+    }]
     // form规则
     const rules = {
         user_name: [{ required: true, message: '必填', type: 'error' },{ min: 4, message: '用户名不少于4个字符', type: 'error' }],
@@ -97,11 +103,10 @@ function LoginContent() {
     }
     function changeTab(e){
         setSelect(e)
-        tabRef.current.trigger(e)
     }
     return (
         <div className="ti-login-content">
-            <Tab ref={tabRef} value={select} onTabChange={(e)=>{changeTab(e)}}/>
+            <Tab value={select} options={tabList} onTabChange={(e)=>{changeTab(e)}}/>
             {content}
             <div className="ti-admin-bind-area">
                 <span onClick={()=>{navigate('/admin-bind')}}>{`添加管理员 >`}</span>
@@ -109,28 +114,16 @@ function LoginContent() {
         </div>
     );
 }
-const Tab = forwardRef((props,ref)=>{
-    useImperativeHandle(ref, () => ({
-        trigger: triggerTab,
-      }));
-    const tab = [{
-        id: 0,
-        item: '登录'
-    },{
-        id: 1,
-        item: '注册'
-    }]
-    const [classValue, setClassValue] = useState(props.value)
-    const tabGroup = tab.map((i,index)=>{
+const Tab = (props)=>{
+    const tabGroup = props.options.map((i,index)=>{
         let classList = 'ti-tab-login'
-        if (classValue === index) {
+        if (props.value === index) {
             classList += ' ti-tab-login-active'
         }
         return (
             <div key={i.id} 
                 className={classList} 
                 onClick={()=>{
-                    setClassValue(index)
                     props.onTabChange(index)
                 }}
             >
@@ -138,14 +131,11 @@ const Tab = forwardRef((props,ref)=>{
             </div>
         ) 
     })
-    function triggerTab(value) {
-        setClassValue(value)
-    }
     return (
         <div className="ti-login-tab" >
             {tabGroup}
         </div>
     )
-})
+}
 
 
